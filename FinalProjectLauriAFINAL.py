@@ -3,7 +3,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 
 electricity_data = pd.read_csv('https://raw.githubusercontent.com/lauriansa/School/refs/heads/main/Electricity_20-09-2024.csv', sep=';', decimal=',')
-price_data = pd.read_csv('https://github.com/lauriansa/School/blob/main/sahkon-hinta-010121-240924.csv', sep=',')
+price_data = pd.read_csv('https://raw.githubusercontent.com/lauriansa/School/refs/heads/main/sahkon-hinta-010121-240924.csv', sep=',')
 
 # Convert time columns to datetime
 electricity_data['Time'] = pd.to_datetime(electricity_data['Time'], format=' %d.%m.%Y %H:%M')
